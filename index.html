@@ -2,37 +2,59 @@
 
 <head>
   <meta charset=utf-8>
-  <title></title>
+  <title>a dog profile</title>
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
   <div id="container">
     <div id="main">
+      <br><button id="ChangeColorB">change color</button><br>
       <div class="intro">
-        <h1>Hi! Welcome to my profile</h1>
+        <h1> Hi! Welcome to my profile </h1>
         <p>
-          I'm a software engineer who likes to play guitar and take long walks.
+          <em><strong>My name is Jane and I'm a 5-year Bernese Mountain Dog.</strong></em>
+        </p>
+
+
+        <div class="row", id="jane">
+          <div class="column">
+            <img src="janeface.jpg" alt="jane"/>
+          </div>
+          <div class="column">
+            <img src="jane-thoughts.jpg" alt="jane-daily-thoughts"/>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="hob">
+        <h2> Hobbies</h2>
+        <p> <strong> Some of my favorite things are:</strong>
+          <ul>
+            <li> Go for a walk.</li>
+            <li> Steal food from the kitchen when no one is looking.</li>
+            <li> Chase ducks in the neighborhood park.</li>
+          </ul>
         </p>
       </div>
-      <div id="work">
-        <h2>Work</h2>
+      <br>
+      <button id="factsB">hide facts about my type</button>
+      <div id="facts">
+        <h2>Facts</h2>
         <p>
-          I work at a software company.
+          <a href="https://www.akc.org/expert-advice/dog-breeds/7-fun-facts-bernese-mountain-dog/" target="_blank">
+            <strong>7 Fun Facts About the Bernese Mountain Dog</strong></a>
         </p>
       </div>
-      <div id="play">
-        <h2>Play</h2>
-        <p>
-          I play guitar and like to go walking.
-        </p>
-      </div>
-      <div id="cat">
-        <img src="cat.png" alt="Black metal cat" />
-      </div>
-      <div id="contact">
-        <button>Contact me</button>
-      </div>
+
+      <br><br>
+      <iframe width="560" height="315" 
+      src="https://www.youtube-nocookie.com/embed/ljNISJluEHA" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe><br>
+
     </div>
   </div>
   <script src="index.js"></script>
