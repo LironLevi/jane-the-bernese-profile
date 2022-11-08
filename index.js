@@ -1,4 +1,6 @@
 
+var r = document.querySelector(':root');
+var rs = getComputedStyle(r);
 
 hidemode = false;
 document.getElementById("factsB").onclick = () => {
@@ -17,11 +19,11 @@ changecolor = true;
 document.getElementById("ChangeColorB").onclick = () => {
       changecolor = !changecolor;
       if (changecolor){
-        document.body.style.backgroundColor = "#FFDAB9";
+        document.body.style.backgroundColor = rs.getPropertyValue("--second-color");
         document.body.style.color = "black";
       }
       else{
-        document.body.style.backgroundColor = "#E9967A"; 
+        document.body.style.backgroundColor = rs.getPropertyValue("--main-color"); 
         document.body.style.color = "white";
       }
   }

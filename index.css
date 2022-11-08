@@ -1,11 +1,17 @@
+
+:root{
+  --main-color: #e9967a;
+  --second-color: #FFDAB9;
+}
+
 html {
   font-family: 'Open Sans', sans-serif;
-  background-color: #e9967a;
+  background-color: var(--main-color);
   font-size: medium;
 }
 
 body {
-  background-color: #FFDAB9;
+  background-color: var(--second-color);
   color: #2d2c2c;
   width: 800px;
   margin: 0 auto;
@@ -21,11 +27,13 @@ h1{
   text-shadow: 2px 2px 1px rgb(62, 61, 61);
 }
 
+
 p, li{
-  font-family: cursive;
+  font-family: cursive, sans-serif;
   line-height: 2;
   letter-spacing: 0.5px;
-  margin-left: 10px;
+  padding-left: 10px;
+  
 }
 
 .row {
@@ -43,6 +51,7 @@ p, li{
 
 #main {
   margin: 0 auto;
+  padding: 20px;
 }
 
 
@@ -62,7 +71,6 @@ button{
   height: 380px;
   transition: 0.3s;
   filter: brightness(90%);
-  margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   
@@ -76,5 +84,7 @@ button{
 iframe{
   display: block;
   margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
